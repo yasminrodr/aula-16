@@ -1,0 +1,68 @@
+//Sara Rodrigues
+
+/* while(condiçao) {
+    //Enquanto o condição for verdadeira 
+    //as linhas de codigo dentro deste bloco
+    //serão executadas
+    //assim que a condição ficar falsa
+    //o LOOP/Laço vai parar
+}
+ */
+let i = 0
+while(i < 10){
+    console.log(i)
+    i++
+}
+
+let estomago = 0;
+while(estomago<100) {
+    console.log("Quero comer mais coxinhas");
+    estomago = estomago + 10;
+    }
+    
+    let soma = 0;
+    let numero= Number(prompt("digite seu numero"));
+
+    while(numero !== 0){
+        soma = soma + numero;
+        numero= Number(prompt("digite seu numero")); 
+        console.log("A soma dos numeros inseridos é:" + soma);
+    }
+
+for(let i = 0; i < 10; i++){
+    console.log(i)
+}
+
+function encontrarMaiorNumero(arr){
+    let maior = arr[0];
+    for(let i = 0; i < arr.length; i++){
+        if (arr[i] > maior){
+            maior = arr[i];
+        }
+    } return "O maior numero é" + maior;
+}
+const numeros = [11,15,18,14,90,13];
+console.log(encontrarMaiorNumero(numeros));
+
+
+const numeros2 = [14, 67, 89, 15, 23]
+for(let numero of numeros2){
+    console.log(numero)
+}
+
+let meuArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for(const elemente of meuArray){
+    console.log(elemente);
+}
+meuArray.forEach(elemento =>{
+    console.log(elemento);
+});
+let palvras = ["a", "b", "c", "d", "e"]
+function retornaFraseCompleta(arrayDePalavras){
+    let frase = " ";
+    for(let i = 0; i < arrayDePalavras.length; i ++){
+        const elementos = arrayDePalavras[i];
+        frase == frase + " " + elementos;
+    } return frase
+}
+console.log(retornaFraseCompleta(palvras));
